@@ -6,19 +6,22 @@ An Android-based music discovery application built using Kotlin. Mercury identif
 ## Screenshots
 
 ### Home
-![Mercury Home](screenshots/home.jpg)
+![Mercury Home](screenshots/home.jpeg)
 
 ### Library
-![Mercury Library](screenshots/library.jpg)
+![Mercury Library](screenshots/library.jpeg)
 
 ### Saved / Favourites
-![Mercury Saved](screenshots/saved.jpg)
+![Mercury Saved](screenshots/saved.jpeg)
 
 ### Song Recognition
-![Recognition Result](screenshots/recognition.jpg)
+![Recognition Result](screenshots/recognition.jpeg)
 
 ### Profile
-![Mercury Profile](screenshots/profile.jpg)
+![Mercury Profile](screenshots/profile.jpeg)
+
+### Profile Statistics
+![Mercury Profile Statistics](screenshots/profilestats2.jpeg)
 
 ## Features
 
