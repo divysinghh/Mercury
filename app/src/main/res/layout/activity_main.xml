@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/mercury_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="22dp"
+        android:paddingEnd="22dp"
+        android:paddingTop="18dp"
+        android:paddingBottom="16dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MERCURY"
+                android:textColor="@color/mercury_text"
+                android:textSize="27sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.12" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MUSIC DISCOVERY, REIMAGINED."
+                android:textColor="@color/mercury_accent"
+                android:textSize="10sp"
+                android:letterSpacing="0.12"
+                android:layout_marginTop="4dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:gravity="center"
+            android:text="♪"
+            android:textSize="25sp"
+            android:textColor="@color/mercury_accent"
+            android:background="@drawable/mercury_song_card" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="22dp"
+            android:paddingEnd="22dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="18dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hey, music lover."
+                android:textColor="@color/mercury_text"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="What are we listening to today?"
+                android:textColor="@color/mercury_secondary_text"
+                android:textSize="14sp"
+                android:layout_marginTop="6dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/mercury_card"
+                android:padding="22dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MUSIC RECOGNITION"
+                    android:textColor="@color/mercury_accent"
+                    android:textSize="10sp"
+                    android:letterSpacing="0.17" />
+
+                <TextView
+                    android:layout_width="124dp"
+                    android:layout_height="124dp"
+                    android:layout_marginTop="22dp"
+                    android:gravity="center"
+                    android:text="♫"
+                    android:textSize="55sp"
+                    android:textColor="@color/mercury_text"
+                    android:background="@drawable/mercury_orb" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="22dp"
+                    android:text="Identify a song"
+                    android:textColor="@color/mercury_text"
+                    android:textSize="21sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:text="Discover the music around you"
+                    android:textColor="@color/mercury_secondary_text"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/listenButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:text="START LISTENING"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.06"
+                    android:backgroundTint="@color/mercury_primary" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="30dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Your discoveries"
+                    android:textColor="@color/mercury_text"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RECENT"
+                    android:textColor="@color/mercury_accent"
+                    android:textSize="10sp"
+                    android:letterSpacing="0.08" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/recentSongsContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Made for curious ears."
+                android:textColor="#746565"
+                android:textSize="11sp"
+                android:layout_gravity="center"
+                android:layout_marginTop="18dp"
+                android:layout_marginBottom="12dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@color/mercury_nav">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="⌂\nHome"
+            android:textColor="@color/mercury_accent"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/libraryButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="▤\nLibrary"
+            android:textColor="@color/mercury_secondary_text"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/favouritesButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="♡\nSaved"
+            android:textColor="@color/mercury_secondary_text"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/profileButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="◉\nProfile"
+            android:textColor="@color/mercury_secondary_text"
+            android:textSize="12sp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="mercury_background">#000000</color>
+    <color name="mercury_surface">#190909</color>
+    <color name="mercury_card">#190909</color>
+    <color name="mercury_primary">#830000</color>
+    <color name="mercury_accent">#B45B5B</color>
+    <color name="mercury_text">#FFFFFF</color>
+    <color name="mercury_secondary_text">#A69A9A</color>
+    <color name="mercury_nav">#100606</color>
+</resources>

@@ -1,0 +1,16 @@
+<resources>
+    <style name="Base.Theme.Mercury" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="fontFamily">@font/plus_jakarta_regular</item>
+        <item name="colorPrimary">@color/mercury_primary</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/mercury_accent</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="colorSurface">@color/mercury_surface</item>
+        <item name="colorOnSurface">@color/white</item>
+        <item name="android:windowBackground">@color/mercury_background</item>
+        <item name="android:statusBarColor">@color/black</item>
+        <item name="android:navigationBarColor">@color/black</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+    <style name="Theme.Mercury" parent="Base.Theme.Mercury"/>
+</resources>
